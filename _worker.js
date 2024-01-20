@@ -4,9 +4,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '424c81a7-aa6b-4d8d-b03a-2728838e01ec';
+let userID = 'abe10451-2c29-4fd8-a079-9569b940c8e9';
 
-const proxyIPs = ['43.156.181.203'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org'];
+const proxyIPs = ['23.162.136.169'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
@@ -81,7 +81,7 @@ export default {
 					default:
 						// return new Response('Not found', { status: 404 });
 						// For any other path, reverse proxy to 'www.fmprc.gov.cn' and return the original response, caching it in the process
-						const hostnames = ['www.zula.ir', 'www.wto.org'];
+						const hostnames = ['www.wto.org'];
 						url.hostname = hostnames[Math.floor(Math.random() * hostnames.length)];
 						url.protocol = 'https:';
 
