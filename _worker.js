@@ -6,11 +6,11 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd6709306-c260-4429-96df-d4250f670b38';
 
-const proxyIPs = ['cdn-all.xn--b6gac.eu.org'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn-b100.xn--b6gac.eu.org'];
+const proxyIPs = ['170.114.46.69'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn-b100.xn--b6gac.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = '51.158.152.202'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://cloudflare-dns.com/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 // v2board api environment variables (optional) deprecated, please use planetscale.com instead
 
