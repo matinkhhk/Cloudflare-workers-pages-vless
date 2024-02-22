@@ -4,13 +4,13 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'd6709306-c260-4429-96df-d4250f670b38';
+let userID = '9a8f7c8b-9465-4398-973b-da4b32d49416';
 
-const proxyIPs = ['x.nobodyqwe.monster'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn-b100.xn--b6gac.eu.org'];
+const proxyIPs = ['edgetunnel.anycast.eu.org'];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn-b100.xn--b6gac.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://dns.google/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://cloudflare-dns.com/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 // v2board api environment variables (optional) deprecated, please use planetscale.com instead
 
